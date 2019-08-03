@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="css/main.css">
+	<title>Speedtest with NodeJs, Express and HTML5</title>
+</head>
+
+<body>
+	<h1>Speedtest with NodeJs, Express and HTML5</h1>
+	<div id="testWrapper">
+		<div id="startStopBtn" onclick="startStop()"></div>
+		<div id="test">
+			<div class="testGroup">
+				<div class="testArea">
+					<div class="testName">Download</div>
+					<canvas id="dlMeter" class="meter"></canvas>
+					<div id="dlText" class="meterText"></div>
+					<div class="unit">Mbps</div>
+				</div>
+				<div class="testArea">
+					<div class="testName">Upload</div>
+					<canvas id="ulMeter" class="meter"></canvas>
+					<div id="ulText" class="meterText"></div>
+					<div class="unit">Mbps</div>
+				</div>
+			</div>
+			<div class="testGroup">
+				<div class="testArea">
+					<div class="testName">Ping</div>
+					<canvas id="pingMeter" class="meter"></canvas>
+					<div id="pingText" class="meterText"></div>
+					<div class="unit">ms</div>
+				</div>
+				<div class="testArea">
+					<div class="testName">Jitter</div>
+					<canvas id="jitMeter" class="meter"></canvas>
+					<div id="jitText" class="meterText"></div>
+					<div class="unit">ms</div>
+				</div>
+			</div>
+			<div id="ipArea">
+				IP Address: <span id="ip"></span>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/speedtest.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript">setTimeout(function () { initUI() }, 100);</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "speedtest-node",
+  "version": "0.0.1",
+  "description": "Speedtest app with node, express and HTML5",
+  "main": "app.js",
+  "repository": "https://github.com/sthnaqvi/speedtest-node",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "express": "^4.17.1",
+    "gps-distance": "0.0.4",
+    "node-cache": "^4.2.1",
+    "random-bytes": "^1.0.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  }
+}
