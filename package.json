@@ -6,6 +6,9 @@
   "repository": "https://github.com/sthnaqvi/speedtest-node",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "start": "node app.js"
+  },
   "dependencies": {
     "express": "^4.17.1",
     "gps-distance": "0.0.4",
