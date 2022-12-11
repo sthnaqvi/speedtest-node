@@ -10,7 +10,7 @@
     "start": "node app.js"
   },
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "gps-distance": "0.0.4",
     "node-cache": "^4.2.1",
     "random-bytes": "^1.0.0",
